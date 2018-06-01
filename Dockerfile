@@ -54,8 +54,8 @@ ENV USER_NAME mnist_test
 ENV HOME_DIR /home/$USER_NAME
 #
 # Replace HOST_UID/HOST_GUID with your user / group id
-ENV HOST_UID 1000
-ENV HOST_GID 1000
+ENV HOST_UID 1013
+ENV HOST_GID 2000
 
 RUN export uid=${HOST_UID} gid=${HOST_GID} && \
     mkdir -p ${HOME_DIR} && \
